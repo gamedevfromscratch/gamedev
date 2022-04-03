@@ -34,11 +34,12 @@ int main(void)
 {
 	char *name1 = "Thalia";
 	char *name2 = "Sean";
+
+	srandom(time(NULL));
+
 	int a = random() % 11 + 2;
 	int b = random() % 11 + 2;
 
-	srandom(time(NULL));
-	
 	praise(50, "Nika");
 	praise(30, "Sam");
 	praise(25, "Sean");
