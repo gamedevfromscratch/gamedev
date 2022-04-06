@@ -6,4 +6,5 @@ int main(void)
 	int b = 6;
 
 	printf("Hello %d\n", a * b);
+	return 0;
 }
