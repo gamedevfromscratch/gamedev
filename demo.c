@@ -47,7 +47,6 @@ int main(void)
 
 	nl();
 	nl();
-	nl();
 
 	for (int i=0; i<10; i++) {
 		if (i % 2 == 0)
@@ -56,7 +55,6 @@ int main(void)
 			printf("hello %s %d\n", name2, i);
 	}
 
-	nl();
 	nl();
 	nl();
 
@@ -73,7 +71,6 @@ int main(void)
 		nl();
 	}
 
-	nl();
 	nl();
 	nl();
 
