@@ -8,7 +8,7 @@ int main(void)
 	
 	int i = 0;
 	
-	while (i < 1000) {
+	while (i <= 1000) {
 		printf("%d ", i);
 		i = i + 1;
 	}
