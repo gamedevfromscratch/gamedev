@@ -11,7 +11,6 @@ void draw(void)
 		int h = y / 3;
 		colour(25, 250 - 200 * y / 500, 25);
 		tri(400 - w / 2, y, 400 + w / 2, y, 400, y - h);
-
 	}
 //POT
 	colour(75, 37, 10);

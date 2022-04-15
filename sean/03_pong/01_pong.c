@@ -127,14 +127,6 @@ void draw(void)
 	}
 }
 
-// TODO:
-// make simpler key check
-// random in range for int and float
-// collision detect function
-// bounce function
-// centered rectangles
-// use structs
-
 void keydown(int key)
 {
 	if (key == SDLK_w) {
