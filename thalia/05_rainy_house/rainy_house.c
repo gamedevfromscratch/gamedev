@@ -32,7 +32,7 @@ error:
 
 void draw(void)
 {
-	dark = 1.2 - f/1000.0;
+	dark = 1.2 - frame/1000.0;
 	dark = MAX(dark, 0);
 
 	// sky

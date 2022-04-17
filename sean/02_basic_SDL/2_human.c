@@ -4,7 +4,7 @@ char *title = "Human";
 
 void draw(void)
 {
-	int x = 400 + f;
+	int x = 400 + frame;
 	int y = 300;
 
 	colour(255, 127, 63);

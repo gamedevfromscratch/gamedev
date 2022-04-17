@@ -8,7 +8,7 @@ void draw(void)
 
 	// sun
 	colour(200, 200, 50);
-	circle(100 + f, 100, 70);
+	circle(100 + frame, 100, 70);
 
 	// grass
 	colour(0, 250, 100);
