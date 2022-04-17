@@ -27,11 +27,10 @@ void draw(void)
 	line(330, 220, 120, 200);
 	line(330, 380, 120, 400);
 
-	// middle circle
+	// thorax
 	colour(110, 40, 10);
 	circle(409, 300, 32);
 
-	// front circle
 	colour(130, 60, 10);
 	circle(460, 300, 30);
 
@@ -44,7 +43,7 @@ void draw(void)
 	colour(0, 160, 20);
 	circle(560, 300, 50);
 
-	// back circle
+	// abdomen
 	colour(0, 200, 20);
 	circle(330, 300, 50);
 	tri(320, 350, 220, 300, 320, 250);
