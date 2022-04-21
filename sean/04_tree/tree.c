@@ -9,7 +9,8 @@ void draw(void)
 	for (int y = 500; y >= 100; y = y - 20) {
 		int w = y / 2;
 		int h = y / 3;
-		colour(25, 250 - 200 * y / 500, 25);
+		int green = 250 - y * 200 / 500;
+		colour(0, green, 0);
 		tri(400 - w / 2, y, 400 + w / 2, y, 400, y - h);
 	}
 //POT
