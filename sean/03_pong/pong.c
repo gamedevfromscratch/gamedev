@@ -21,7 +21,7 @@ float ball_w = 10;
 float bat_w = 6;
 float bat_h = 60;
 
-float hit_boost = 1.1;
+float hit_boost = 11.0;
 
 int p1_score = 0;
 int p2_score = 0;
@@ -44,11 +44,40 @@ void init(void)
 	new_ball();
 }
 
+void score(int p_score, int x, int y) 
+{
+	if (p_score != 1 && p_score != 4) {
+		rect(x, y, 25, 2);
+	}
+	if (p_score != 1 && p_score != 2 && p_score != 3 && p_score != 7) {
+		rect(x, y, 2, 25);
+	}
+	if (p_score == 2 || p_score == 6 || p_score == 0 || p_score == 8) {
+		rect(x, y+25, 2, 25);
+	}
+	if (p_score != 1 && p_score != 7 && p_score != 0) {
+		rect(x, y+25, 25, 2);
+	}
+	if (p_score != 1 && p_score != 7 && p_score != 4) {
+		rect(x, y+50, 25, 2);
+	}
+	if (p_score != 5 && p_score != 6) {
+		rect(x+25, y, 2, 25);
+	}
+	if (p_score != 2) {
+		rect(x+25, y+25, 2, 27);
+	}
+}
+
 void draw(void)
 {
 	printf("\r%d %d ", p1_score, p2_score);
 	fflush(stdout);
-
+	
+	//Scoreboard
+	score(p1_score, 200, 25);
+	score(p2_score, 600, 25);
+	
 	//Ball
 	rectc(x, y, ball_w, ball_w);
 
@@ -116,7 +145,7 @@ void draw(void)
 
 	// check for player 1 win
 	if (x - ball_w/2 >= 800) {
-		p1_score++;
+		p1_score++;		
 		new_ball();
 	}
 
@@ -124,6 +153,12 @@ void draw(void)
 	if (x + ball_w/2 < 0) {
 		p2_score++;
 		new_ball();
+	}
+	
+	// reset scores if > 9
+	if (p1_score > 9 || p2_score > 9) {
+		p1_score = 0;
+		p2_score = 0;
 	}
 }
 
