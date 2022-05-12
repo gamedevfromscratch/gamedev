@@ -21,7 +21,7 @@ float ball_w = 10;
 float bat_w = 6;
 float bat_h = 60;
 
-float hit_boost = 11.0;
+float hit_boost = 1.1;
 
 int p1_score = 0;
 int p2_score = 0;
